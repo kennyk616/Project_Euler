@@ -4,7 +4,7 @@
  * @author ken
  *
  */
-public class Problem4 {
+public class Problem004 {
 
 	public static boolean isPalindrome(int n){
 		String s = Integer.toString(n);

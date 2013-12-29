@@ -4,7 +4,7 @@
  * @author ken
  *
  */
-public class Problem5 {
+public class Problem005 {
 	
 	public static boolean isPrime(int n) {
 		int sqrt = (int)(Math.sqrt(n));

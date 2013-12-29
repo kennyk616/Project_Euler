@@ -1,11 +1,12 @@
 /**
- * sum of primes below 2 million
- * http://projecteuler.net/problem=10
+ * find 10001st prime number
+ * http://projecteuler.net/problem=7
  * @author ken
  *
  */
-public class Problem10 {
+public class Problem007 {
 
+	
 	public static boolean isPrime(int n) {
 		int sqrt = (int)(Math.sqrt(n));
 		for (int i = 2; i<=sqrt; i++) {
@@ -18,17 +19,20 @@ public class Problem10 {
 	
 	public static void main(String[] args) {
 		// TODO Auto-generated method stub
-		
-		int n = 2000000;		
-		long sum = 2;
-		for (int i = 3; i<n; i+=2) {
-			if (isPrime(i)){
-				sum += i;
+		int target = 10001;
+		int n = 3;
+		int count = 1;
+		int prime = n;
+		while (count <target) {
+			if (isPrime(n)){
+				count ++;
+				prime = n;
 			}
+			n += 2;
 		}
-		System.out.println(sum);
+		
+		System.out.println(prime);
 		System.exit(0);
-
 	}
 
 }

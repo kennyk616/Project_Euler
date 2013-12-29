@@ -4,7 +4,7 @@
  * @author ken
  *
  */
-public class Problem9 {
+public class Problem009 {
 
 	public static void main(String[] args) {
 		// TODO Auto-generated method stub
