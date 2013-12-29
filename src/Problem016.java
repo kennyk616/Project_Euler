@@ -6,7 +6,7 @@ import java.math.BigInteger;
  * @author ken
  *
  */
-public class Problem16 {
+public class Problem016 {
 
 	public static void main(String[] args) {
 		// TODO Auto-generated method stub

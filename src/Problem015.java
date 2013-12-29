@@ -6,7 +6,7 @@ import java.math.BigInteger;
  * @author ken
  *
  */
-public class Problem15 {
+public class Problem015 {
 	
 	public static BigInteger factorial(int n){
 		BigInteger prod = new BigInteger("1");
