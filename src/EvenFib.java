@@ -1,5 +1,6 @@
 /**
  * sum of even fib numbers <= 4 million
+ * http://projecteuler.net/problem=2
  * @author ken
  *
  */

@@ -1,5 +1,6 @@
 /**
  * Find the largest prime factor of a value
+ * http://projecteuler.net/problem=3
  * @author ken
  *
  */
