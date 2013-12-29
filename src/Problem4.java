@@ -4,7 +4,7 @@
  * @author ken
  *
  */
-public class LargestPalindromeProduct {
+public class Problem4 {
 
 	public static boolean isPalindrome(int n){
 		String s = Integer.toString(n);

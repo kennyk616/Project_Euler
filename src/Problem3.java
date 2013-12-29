@@ -4,7 +4,7 @@
  * @author ken
  *
  */
-public class LargestPrimeFactor {
+public class Problem3 {
 
 	public static long largestPrimeFactor(long n) {
 		long val = n;

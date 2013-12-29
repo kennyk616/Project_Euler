@@ -3,7 +3,7 @@
  * @author ken
  *
  */
-public class mult35 {
+public class Problem1 {
 
 	public static void main(String[] args) {
 		int sum = 0;

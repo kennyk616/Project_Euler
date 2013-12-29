@@ -1,5 +1,10 @@
-
-public class LargestProduct {
+/**
+ * Largest product in a series
+ * http://projecteuler.net/problem=8
+ * @author ken
+ *
+ */
+public class Problem8 {
 
 	static String s = "73167176531330624919225119674426574742355349194934"
 			+ "96983520312774506326239578318016984801869478851843"

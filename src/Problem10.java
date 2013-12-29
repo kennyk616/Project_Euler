@@ -4,7 +4,7 @@
  * @author ken
  *
  */
-public class SumPrimes {
+public class Problem10 {
 
 	public static boolean isPrime(int n) {
 		int sqrt = (int)(Math.sqrt(n));

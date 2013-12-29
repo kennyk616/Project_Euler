@@ -4,7 +4,7 @@
  * @author ken
  *
  */
-public class NthPrime {
+public class Problem7 {
 
 	
 	public static boolean isPrime(int n) {
