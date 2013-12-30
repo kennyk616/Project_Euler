@@ -74,7 +74,7 @@ public class Problem037 {
 	public static void main(String[] args) {
 		// TODO Auto-generated method stub
 		
-		int limit = 1000000;
+		int limit = 1000000;	//don't know what the upper limit is
 				
 		Set<Integer> primes = new HashSet<Integer>(generatePrime(limit));
 		int sum = 0;
