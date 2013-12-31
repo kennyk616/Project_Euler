@@ -85,4 +85,12 @@ public class Util {
 		return true;
 	}
 	
+	public static boolean isPentagon(long p) {
+		double n = (Math.sqrt(24*p+1)+1)/6.0;
+		if ((int)n == n) {
+			return true;
+		}
+		return false;
+	}
+	
 }
