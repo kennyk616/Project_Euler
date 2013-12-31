@@ -7,9 +7,6 @@
 public class Problem040 {
 	
 	public static int calculateDigit(int target) {
-		if (target <10){
-			return target;
-		}
 		int curVal = target;
 		int curPow = 0;
 		int digit = 0;

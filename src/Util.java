@@ -1,5 +1,5 @@
 import java.util.ArrayList;
-import java.util.Set;
+import java.util.Collection;
 
 
 public class Util {
@@ -55,7 +55,7 @@ public class Util {
 		return primes;
 	}
 	
-	public static long largestPrimeFactor(long n, Set<Integer> primes) {
+	public static long largestPrimeFactor(long n, Collection<Integer> primes) {
 		long val = n;
 		long divisor = 2L;
 		long largestDivisor = 2L;
