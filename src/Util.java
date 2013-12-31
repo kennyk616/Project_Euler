@@ -1,5 +1,6 @@
 import java.util.ArrayList;
 import java.util.Collection;
+import java.util.List;
 
 
 public class Util {
@@ -73,6 +74,32 @@ public class Util {
 		}
 
 		return largestDivisor;
+	}
+	
+	public static int numPrimeFactors(long n, List<Integer> primes) {
+		int numPrimeFactors = 0;
+		boolean bool;
+		long remainder = n;
+		
+		for (int i = 0; i<primes.size(); i++) {
+			if (primes.get(i)*primes.get(i) > n) {
+				return numPrimeFactors+1;
+			}
+			
+			bool = false;
+			while (remainder %primes.get(i)==0) {
+				bool = true;
+				remainder = remainder/primes.get(i);
+			}
+			if (bool){
+				numPrimeFactors++;
+			}
+			
+			if (remainder == 1){
+				return numPrimeFactors;
+			}
+		}
+		return numPrimeFactors;
 	}
 	
 	public static boolean isPalindrome(int n){
