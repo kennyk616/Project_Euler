@@ -176,10 +176,8 @@ class Hand implements Comparable<Hand>{
 	
 	private int compareSingles(Hand o){
 		for (int i = handSize-1; i>=0; i--){
-			int val = hand[i].val;
-			int other = o.hand[i].val;
-			if (val != other){
-				return val - other;
+			if (hand[i].compareTo(o.hand[i])!=0){
+				return hand[i].compareTo(o.hand[i]);
 			}
 		}
 		return 0;
