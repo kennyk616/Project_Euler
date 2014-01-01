@@ -1,4 +1,6 @@
+import java.math.BigInteger;
 import java.util.ArrayList;
+import java.util.Arrays;
 import java.util.Collection;
 import java.util.List;
 
@@ -118,6 +120,37 @@ public class Util {
 			return true;
 		}
 		return false;
+	}
+	
+	public static int[] countDigits (long a) {
+		int[] count = new int[10];
+		long val = a;
+		while (val > 0) {
+			count[(int)(val%10)]++;
+			val = val/10;
+		}
+		return count;
+	}
+	
+	public static boolean isPermutation(long a, long b){
+		if (Long.toString(a).length()!=Long.toString(b).length()){
+			return false;
+		}
+		int[] countA = countDigits(a);
+		int[] countB = countDigits(b);
+		return Arrays.equals(countA, countB);
+		
+	}
+	
+	public static BigInteger factorial(int n){
+		if (n==0 || n==1){
+			return BigInteger.valueOf(1);
+		}
+		BigInteger prod = BigInteger.valueOf(1);
+		for (int i = 2; i<=n; i++){
+			prod = prod.multiply(BigInteger.valueOf(i));
+		}
+		return prod;
 	}
 	
 }
