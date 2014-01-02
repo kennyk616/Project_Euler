@@ -1,7 +1,4 @@
 /bin/
-*.class
-*.in
-*.out
 .DS_Store
 .classpath
 .project

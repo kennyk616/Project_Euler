@@ -1,4 +1,9 @@
-
+/**
+ * spiral primes
+ * http://projecteuler.net/problem=57
+ * @author ken
+ *
+ */
 
 public class Problem058 {
 
