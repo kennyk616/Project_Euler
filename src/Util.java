@@ -197,4 +197,17 @@ public class Util {
 		}
 		return sum;
 	}
+	
+	public static boolean isPrime(long val){
+		if (val <= 1) return false;
+		if (val== 2) return true;
+		if (val%2== 0) return false;
+		
+		long div = 3;
+		while (div * div <=val){
+			if (val%div == 0) return false;
+			div += 2;
+		}
+		return true;
+	}
 }
