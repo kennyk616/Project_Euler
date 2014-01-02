@@ -185,6 +185,10 @@ public class Util {
 		return reverse;
 	}
 	
+	public static int numDigits(BigInteger bi) {
+		return bi.toString().length();
+	}
+	
 	public static int sumOfDigits(BigInteger bi){
 		char[] array = bi.toString().toCharArray();
 		int sum = 0;
