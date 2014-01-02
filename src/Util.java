@@ -184,4 +184,13 @@ public class Util {
 		
 		return reverse;
 	}
+	
+	public static int sumOfDigits(BigInteger bi){
+		char[] array = bi.toString().toCharArray();
+		int sum = 0;
+		for (int i = 0; i<array.length; i++){
+			sum += array[i]-'0';
+		}
+		return sum;
+	}
 }
