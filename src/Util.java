@@ -104,8 +104,8 @@ public class Util {
 		return numPrimeFactors;
 	}
 	
-	public static boolean isPalindrome(int n){
-		String s = Integer.toString(n);
+	public static boolean isPalindrome(long n){
+		String s = Long.toString(n);
 		for (int i = 0; i<s.length()/2; i++){
 			if (s.charAt(i)!=(s.charAt(s.length()-1-i))){
 				return false;
@@ -153,4 +153,35 @@ public class Util {
 		return prod;
 	}
 	
+	
+	public static boolean isPanindromeBigInteger(BigInteger bi) {
+		char[] array = bi.toString().toCharArray();
+		for (int i = 0; i<array.length/2; i++){
+			if (array[i]!=array[array.length-1-i]){
+				return false;
+			}
+		}
+		return true;
+	}
+	
+	public static BigInteger reverseBigInteger(BigInteger bi){
+		char[] array = bi.toString().toCharArray();
+		for (int i = 0; i<array.length/2; i++){
+			char tmp = array[i];
+			array[i] = array[array.length-1-i];
+			array[array.length-1-i] = tmp;
+		}
+		return new BigInteger(new String(array));
+	}
+	
+	public static long reverseInt(long l){
+		long reverse = 0;
+		long input = l;
+		while (input != 0){
+			reverse = reverse * 10 + input%10;
+			input = input/10;
+		}
+		
+		return reverse;
+	}
 }
