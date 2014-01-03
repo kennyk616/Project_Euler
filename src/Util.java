@@ -210,4 +210,9 @@ public class Util {
 		}
 		return true;
 	}
+	
+	public static long concatInt(int a, int b){
+		String concat = Long.toString(a) + Long.toString(b);
+		return Long.valueOf(concat);
+	}
 }
