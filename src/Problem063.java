@@ -1,4 +1,3 @@
-import java.math.BigInteger;
 
 /**
  * powerful digit counts
@@ -20,7 +19,6 @@ public class Problem063 {
 			n++;
 		}
 		
-		System.out.println(n);
 		System.out.println(count);
 		System.exit(0);
 	}
